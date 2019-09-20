@@ -12,7 +12,9 @@ const CustomModal = ({ isActive, children, title, handleClose}) => {
     return (
         <Modal isActive={isActive}>
             <ModalBackground onClick={handleClose} />
-            <ModalContent>
+            <ModalContent
+                style={{ backgroundColor: 'white', padding: '2rem', maxWidth: '100vw' }}
+            >
                 <Title isSize={6}>
                     {title}
                 </Title>
